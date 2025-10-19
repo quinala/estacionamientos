@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+.parking-lot {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  max-width: 400px;
+  margin: 20px auto;
+}
+.spot {
+  padding: 20px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+.free {
+  background-color: #dff0d8;
+  color: #3c763d;
+}
+.occupied {
+  background-color: #f2dede;
+  color: #a94442;
+}
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #337ab7;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #286090;
+}
