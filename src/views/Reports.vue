@@ -246,6 +246,10 @@
 
     <!-- Botones de Acción -->
     <div class="action-buttons">
+      <router-link to="/users" class="btn btn-primary">
+      👥 Ver Usuarios
+      </router-link>
+      
       <button @click="printReport" class="btn btn-success">
         🖨️ Imprimir Reporte
       </button>

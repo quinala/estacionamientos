@@ -90,6 +90,9 @@
         <router-link to="/reports" class="btn btn-warning">
           📈 Ver Reportes
         </router-link>
+        <router-link to="/users" class="btn btn-warning">
+          📈 Ver Usuarios
+        </router-link>
       </div>
     </div>
   </div>

@@ -10,12 +10,14 @@ import Dashboard from '../views/Dashboard.vue'
 import SpotsList from '../views/SpotsList.vue'
 import VehicleEntry from '../views/VehicleEntry.vue'
 import Reports from '../views/Reports.vue'
+import Users from '../views/Users.vue'
 
 const routes = [
   { 
     path: '/login', 
     name: 'Login', 
     component: Login,
+   
     beforeEnter: authGuard.redirectIfAuth
   },
   { 
@@ -48,11 +50,17 @@ const routes = [
     component: Reports,
     beforeEnter: authGuard.requireAuth
   },
+  {
+    path: '/users',
+    name: 'Users',
+    component: Users
+  },
   // Ruta de redirección por defecto
   { 
     path: '/:pathMatch(.*)*', 
     redirect: '/' 
   }
+  
 ]
 
 const router = createRouter({

@@ -13,7 +13,11 @@
         <router-link to="/spots">Espacios</router-link>
         <router-link to="/entry">Entrada/Salida</router-link>
         <router-link to="/reports">Reportes</router-link>
+        <router-link to="/users" class="nav-link">
+      👥 Usuarios
+    </router-link>
 
+    
         <router-link v-if="isAdmin" to="/reports">Reportes</router-link>
         <button @click="handleLogout" class="btn-logout">
           Cerrar Sesión
